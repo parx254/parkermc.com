@@ -15,10 +15,15 @@
     <link rel="icon" href="/favicon/favicon.ico">
     <link rel="manifest" href="/site.webmanifest">
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Parker</title>
+<meta name="description" content="Parker is a full-stack web developer specializing in modern web apps, cloud integration, and data analytics.">
+    <title>Parker's Portfolio</title>
 </head>
 <body>
     <div class="left-section">
@@ -27,26 +32,26 @@
             <img src="parker.jpeg" alt="Parker" class="profile-image">
             <h1>PARKER</h1>
             <h2>Web Developer</h2>
-            <button>
-                <a href="https://www.linkedin.com/in/parkmc/" target="_blank">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-            </button>
-            <button>
-                <a href="tel:+2546449907">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                </a>
-            </button>
-            <button>
-                <a href="/cdn-cgi/l/email-protection#7e0e131d1d121b12121f101a4c3e19131f1712501d1113">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </a>
-            </button>
+<a href="https://www.linkedin.com/in/parkmc/" target="_blank" class="icon-btn">
+  <i class="fa fa-linkedin" aria-hidden="true"></i>
+</a>
+<a href="tel:+2546449907" class="icon-btn">
+  <i class="fa fa-phone" aria-hidden="true"></i>
+</a>
+<a href="https://github.com/parx254" class="icon-btn">
+  <i class="fa fa-github" aria-hidden="true"></i>
+</a>
+<a href="/cdn-cgi/l/email-protection#7e0e131d1d121b12121f101a4c3e19131f1712501d1113" class="icon-btn">
+  <i class="fa fa-envelope" aria-hidden="true"></i>
+</a>
+
+
         </div>
     </div>
     <div class="right-section" id="rightSection">
         <ul class="nav">
             <li><a data-tab="about" class="active">About</a></li>
+            <li><a data-tab="contact">Contact</a></li>
             <li><a data-tab="skills">Skills</a></li>
             <li><a data-tab="resume">Experience</a></li>
             <li><a data-tab="portfolio">Projects</a></li>
@@ -60,43 +65,81 @@
         <div id="about" class="tab-content active">
             <h2>About Me</h2>
             <p class="about-me">
-                I am a skilled web developer with expertise in creating and optimizing WordPress websites using HTML, CSS, PHP, MySQL, and JavaScript. With a focus on performance, SEO, and tailored solutions, I have managed technical aspects of WordPress and implemented scalable cloud infrastructures with AWS and Azure. A 2018 graduate of Indiana University, I bring strong UX/UI design skills using InVision and Adobe Photoshop, along with advanced data visualization using Tableau and Power BI. My experience includes collaborating with government agencies to develop automated systems and delivering impactful, user-focused solutions that drive business growth.
+                Welcome to my portfolio! I am a results-driven Full-Stack Web Developer specializing in high-performance websites and scalable digital solutions. With expertise in HTML, CSS, PHP, MySQL, JavaScript, and AWS, I craft intuitive, user-focused platforms that enhance functionality, optimize SEO, and drive engagement.
             </p>
+            <p class="about-me">
+Explore my work and see how I bring ideas to life at parkermc.com. Let’s connect and build something exceptional!            </p>
         </div>
+<div id="contact" class="tab-content">
+  <h2>Contact Me</h2>
+  <form class="contact-form" action="contact.php" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="message">Message</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
         <div id="skills" class="tab-content">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Bootstrap</li>
-                <li>PHP</li>
-                <li>Javascript</li>
-                <li>jQuery</li>
-                <li>XML</li>
-                <li>MySQL</li>
-                <li>Visual Studio</li>
-                <li>WebEOC</li>
-                <li>WooCommerce</li>
-                <li>Azure</li>
-                <li>Jira</li>
-                <li>Git</li>
-                <li>GitHub</li>
-                <li>cPanel</li>
-                <li>Elementor</li>
-                <li>WordPress</li>
-                <li>Amazon Web Services</li>
-                <li>Cloudflare</li>
-                <li>InVision</li>
-                <li>Adobe Photoshop</li>
-                <li>Office 365</li>
-                <li>Google Suite</li>
-                <li>Google Analytics</li>
-                <li>Google My Business</li>
-                <li>Google Search Console</li>
-                <li>Google Tag Manager</li>
-                <li>Tableau</li>
-                <li>Power BI</li>
-            </ul>
+    <h2>Skills</h2>
+                <div id="skills" class="skills-grid">
+    <h3>Web Development</h3>
+  <div class="grid">
+    <div class="skill"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+    <div class="skill"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+    <div class="skill"><i class="fab fa-bootstrap" style="color:#7952B3;"></i><span>Bootstrap</span></div>
+    <div class="skill"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+    <div class="skill"><i class="devicon-jquery-plain colored"></i><span>jQuery</span></div>
+    <div class="skill"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+    <div class="skill"><i class="fa-solid fa-code" style="color:#999;"></i><span>XML</span></div>
+    <div class="skill"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+    <div class="skill"><i class="devicon-wordpress-plain colored"></i><span>WordPress</span></div>
+    <div class="skill"><i class="devicon-woocommerce-plain colored"></i><span>WooCommerce</span></div>
+    <div class="skill"><i class="fa-brands fa-elementor" style="color:#92003B;"></i><span>Elementor</span></div>
+    <div class="skill"><i class="fa-solid fa-network-wired" style="color:#888;"></i><span>WebEOC</span></div>
+  </div>
+
+  <!-- DevOps & Hosting -->
+  <h3>DevOps & Hosting</h3>
+  <div class="grid">
+    <div class="skill"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>AWS</span></div>
+    <div class="skill"><i class="devicon-amazonwebservices-plain-wordmark colored"></i><span>Amazon S3</span></div>
+    <div class="skill"><i class="fa-solid fa-envelope" style="color:#D44638;"></i><span>Amazon SES</span></div>
+    <div class="skill"><i class="devicon-azure-plain colored"></i><span>Azure</span></div>
+    <div class="skill"><i class="fa-solid fa-server" style="color:#6C757D;"></i><span>cPanel</span></div>
+    <div class="skill"><i class="devicon-cloudflare-plain colored"></i><span>Cloudflare</span></div>
+    <div class="skill"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+    <div class="skill"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
+  </div>
+
+  <!-- Analytics & SEO -->
+  <h3>Analytics & SEO</h3>
+  <div class="grid">
+    <div class="skill"><i class="fa-brands fa-google" style="color:#4285F4;"></i><span>Analytics</span></div>
+    <div class="skill"><i class="fa-brands fa-google" style="color:#34A853;"></i><span>Tag Manager</span></div>
+    <div class="skill"><i class="fa-brands fa-google" style="color:#EA4335;"></i><span>Search Console</span></div>
+    <div class="skill"><i class="fa-brands fa-google" style="color:#FBBC05;"></i><span>My Business</span></div>
+    <div class="skill"><i class="fa-solid fa-chart-line" style="color:#28A745;"></i><span>Tableau</span></div>
+    <div class="skill"><i class="fa-solid fa-chart-pie" style="color:#17A2B8;"></i><span>Power BI</span></div>
+    <div class="skill"><i class="fa-solid fa-magnifying-glass-chart" style="color:#0F91D2;"></i><span>Ahrefs</span></div>
+  </div>
+
+  <!-- Tools & Platforms -->
+  <h3>Tools & Platforms</h3>
+  <div class="grid">
+    <div class="skill"><i class="devicon-visualstudio-plain colored"></i><span>Visual Studio</span></div>
+    <div class="skill"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
+    <div class="skill"><i class="fa-brands fa-microsoft" style="color:#F25022;"></i><span>Office 365</span></div>
+    <div class="skill"><i class="fa-brands fa-google" style="color:#4285F4;"></i><span>Google Suite</span></div>
+    <div class="skill"><i class="fa-solid fa-pen-nib" style="color:#DAA520;"></i><span>InVision</span></div>
+    <div class="skill"><i class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+  </div>
+        </div>
         </div>
         <div id="resume" class="tab-content">
             <h2>Work Experience</h2>
@@ -108,17 +151,19 @@
                         <p class="company">SP+ Remote</p>
                     </div>
                     <div class="logo-container">
-                        <img src="Metropolis-SP-header-logo.png" class="resume-image" alt="SP+ Logo">
+                        <img src="Metropolis-SP-header-logo.png" loading="lazy" class="resume-image" alt="SP+ Logo">
                     </div>
                 </div>
                 <ul class="job-details">
-                    <li>Developed WordPress websites and structured the website architecture using HTML, CSS, PHP, MySQL, and jQuery, delivering tailored solutions that exceeded client expectations and supported business growth.</li>
-                    <li>Optimized websites performance and managed all technical aspects of WordPress.</li>
-                    <li>Established and implemented digital analytics tagging standards, improving SEO analysis.</li>
-                    <li>Set up an e-commerce API plugin on the site, featuring parking locations and a secure payment system.</li>
-                    <li>Deployed and configured scalable WordPress instances on AWS using S3 and Route 53.</li>
-                    <li>Revitalized and optimized custom WordPress plugins, resulting in a more intuitive user experience.</li>
-                    <li>Managed daily WordPress website operations, ensuring uptime, functionality, and responsiveness.</li>
+                      <li>Developed WordPress websites and structured the website architecture using HTML, CSS, PHP, MySQL, and jQuery, delivering tailored solutions that exceeded client expectations and supported business growth.</li>
+  <li>Optimized website performance and managed all technical aspects of WordPress.</li>
+  <li>Implemented digital analytics tagging standards, improving SEO analysis.</li>
+  <li>Set up an e-commerce API plugin, enabling features for parking locations and a secure payment system.</li>
+  <li>Configured and maintained MySQL databases, supporting custom features and efficient data storage.</li>
+  <li>Deployed and configured scalable WordPress instances on AWS using S3 and Route 53.</li>
+  <li>Integrated Amazon SES for transactional emails, enhancing reliability and optimizing deliverability.</li>
+  <li>Revitalized and optimized custom WordPress plugins, creating a more intuitive user experience.</li>
+  <li>Managed daily WordPress website operations, ensuring uptime, functionality, and responsiveness.</li>
                 </ul>
             </div>
             <div class="work-experience">
@@ -129,7 +174,7 @@
                         <p class="company">Juvare Arlington, VA</p>
                     </div>
                     <div class="logo-container">
-                        <img src="JUVARE_Lockup_B_Color.png" class="resume-image" alt="SP+ Logo">
+                        <img src="JUVARE_Lockup_B_Color.png" loading="lazy" class="resume-image" alt="SP+ Logo">
                     </div>
                 </div>
                 <ul class="job-details">
@@ -144,87 +189,71 @@
         <div id="portfolio" class="tab-content">
             <h2>Projects</h2>
             <div class="project-container">
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>Social Destinations</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://www.socialdestinations.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>Alamo Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://alamo.parkingguide.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>MBS Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://www.mbsparking.org" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>ATL Plus Mobility Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://www.atlplusmobility.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>NY Mets Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://www.nymetsparking.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>Baltimore Peninsula Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://www.balpenparking.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>Chicago Park District Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://www.chicagoparkdistrictparking.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-wrapper">
-                    <div class="project-item">
-                        <h2>Port Everglades Parking Guide</h2>
-                    </div>
-                    <div class="project-button">
-                        <a href="https://porteverglades.parkingguide.com" target="_blank" class="button-link">
-                            Check Out Project <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+   <div class="project-wrapper">
+  <div class="project-item">
+    <img src="/images/social-destinations.png" loading="lazy" alt="Social Destinations Screenshot" />
+    <h3>Social Destinations</h3>
+    <p>Social travel platform with multimedia posts, custom maps, and real-time weather integration.</p>
+    <a href="https://www.socialdestinations.com" target="_blank" class="project-btn">
+      View Project
+    </a>
+  </div>
+</div>
+
+<div class="project-wrapper">
+  <div class="project-item">
+    <img src="/images/park-harrisburg.png" loading="lazy" alt="Park Harrisburg Parking Guide Screenshot" />
+    <h3>Park Harrisburg</h3>
+    <p>Custom-built parking guide for Park Harrisburg with responsive UI and API-based data.</p>
+    <a href="https://www.parkharrisburg.com" target="_blank" class="project-btn">
+      View Project
+    </a>
+  </div>
+</div>
+
+<div class="project-wrapper">
+  <div class="project-item">
+    <img src="/images/atl-plus.png" loading="lazy" alt="ATL Plus Mobility Parking Guide Screenshot" />
+    <h3>ATL Plus Mobility</h3>
+    <p>Modernized parking portal featuring WordPress integration and scalable plugin architecture.</p>
+    <a href="https://www.atlplusmobility.com" target="_blank" class="project-btn">
+      View Project
+    </a>
+  </div>
+</div>
+
+<div class="project-wrapper">
+  <div class="project-item">
+    <img src="/images/ny-mets.png" loading="lazy" alt="NY Mets Parking Guide Screenshot" />
+    <h3>NY Mets Parking Guide</h3>
+    <p>Streamlined fan parking experience with custom theme development and event-based routing.</p>
+    <a href="https://www.nymetsparking.com" target="_blank" class="project-btn">
+      View Project
+    </a>
+  </div>
+</div>
+
+<div class="project-wrapper">
+  <div class="project-item">
+    <img src="/images/alamo.png" loading="lazy" alt="Alamo Parking Guide Screenshot" />
+    <h3>Alamo Parking Guide</h3>
+    <p>Scalable parking site for Alamo parking locations with mobile-first design.</p>
+    <a href="https://alamo.parkingguide.com" target="_blank" class="project-btn">
+      View Project
+    </a>
+  </div>
+</div>
+<div class="project-wrapper">
+  <div class="project-item">
+    <img src="/images/chicago-park.png" loading="lazy" alt="Chicago Park District Parking Guide Screenshot" />
+    <h3>Chicago Park District</h3>
+    <p>Interactive parking guide tailored for Chicago Park District visitors with mobile support and dynamic content.</p>
+    <a href="https://www.chicagoparkdistrictparking.com" target="_blank" class="project-btn">
+      View Project
+    </a>
+  </div>
+</div>
+</div>
         </div>
     </div>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
