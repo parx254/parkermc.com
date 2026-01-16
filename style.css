@@ -78,27 +78,34 @@ img, div {
 }
 .left-section video {
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
+  opacity: .05;
   width: 100%;
   height: 100%;
   object-fit: cover;
   z-index: 1;
 }
-.left-section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  /* padding: 20px; */
-  height: 100%;
-  background-color: var(--color-bg);
-  z-index: 2;
-}
+
 .left-section .content {
   position: relative;
   z-index: 3;
   text-align: center;
 }
+
+.left-section .overlay {
+  position: absolute;
+  inset: 0;
+  padding: 20px;
+  z-index: 2;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    94% 100%,
+    0 100%
+  );
+}
+
 .icon-btn {
   border: none;
   border-radius:2px;
@@ -487,6 +494,10 @@ h1:hover::after, h2:hover::after, h3:hover::after {
   body {
     flex-direction: column;
     height: auto;
+  }
+
+    .left-section .overlay {
+    clip-path: none;
   }
   .left-section, /* Right Section */
 .right-section {
