@@ -27,12 +27,14 @@
   </head>
   <body>
     <div class="left-section">
-      <div class="overlay">      <video playsinline muted autoplay loop preload="auto">
-        <source src="videos/philadelphia.mp4" type="video/mp4">
-        <source src="videos/philadelphia.webm" type="video/webm">
-        <source src="videos/philadelphia.ogv" type="video/ogg">
-        Your browser does not support the video tag.
-      </video></div>
+      <div class="overlay">
+        <video playsinline muted autoplay loop preload="auto">
+          <source src="videos/philadelphia.mp4" type="video/mp4">
+          <source src="videos/philadelphia.webm" type="video/webm">
+          <source src="videos/philadelphia.ogv" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
       <div class="content">
         <img src="/images/parker.jpg" alt="Headshot of Parker Mc, Full-Stack Web Developer" class="profile-image" loading="lazy">
         <h1>PARKER</h1>
@@ -53,11 +55,11 @@
     </div>
     <div class="right-section" id="rightSection">
       <ul class="nav">
-        <li><a data-tab="about" data-color="#BE3455" class="active">About</a></li>
-        <li><a data-tab="contact" data-color="#2A7F62">Contact</a></li>
+        <li><a data-tab="portfolio" data-color="#34be9d" class="active">Projects</a></li>
         <li><a data-tab="skills" data-color="#2C6EAD">Skills</a></li>
         <li><a data-tab="resume" data-color="#6C3BAA">Experience</a></li>
-        <li><a data-tab="portfolio" data-color="#34be9d">Projects</a></li>
+        <li><a data-tab="about" data-color="#BE3455">About</a></li>
+        <li><a data-tab="contact" data-color="#2A7F62">Contact</a></li>
         <div class="search-bar">
           <input type="text" id="searchInput" placeholder="Search...">
           <button id="searchButton">
@@ -65,30 +67,189 @@
           </button>
         </div>
       </ul>
-      <div id="about" class="tab-content active">
-        <h2>About Me</h2>
-        <p class="about-me">
-          Hi, I'm Parker! Welcome to my portfolio! I am a results-driven Full-Stack Web Developer specializing in high-performance websites and scalable digital solutions. With expertise in HTML, CSS, PHP, MySQL, JavaScript, and AWS, I craft intuitive, user-focused platforms that enhance functionality, optimize SEO, and drive engagement.
-          <br><br>
-          Explore my work and see how I bring ideas to life at parkermc.com. I also built a social travel web application at <a href="https://socialdestinations.com" target="_blank">socialdestinations.com</a>. Let’s connect and build something exceptional!
-        </p>
-      </div>
-      <div id="contact" class="tab-content">
-        <h2>Contact Me</h2>
-        <p class="about-me">
-          Have a project in mind, or just want to say hi? I’d love to hear from you! Fill out the form below or reach out directly through LinkedIn or email.
-        </p>
-        <form class="contact-form" id="contactForm" method="POST">
-          <input type="text" name="website" id="website" style="display:none;">
-          <label for="name">Name</label>
-          <input type="text" name="name" placeholder="Name" id="name" required>
-          <label for="email">Email</label>
-          <input type="email" name="email" placeholder="Email" id="email" required>
-          <label for="message">Message</label>
-          <textarea name="message" id="message" placeholder="Message" rows="3" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        <div id="formMessage" class="form-message"></div>
+      <div id="portfolio" class="tab-content active">
+        <h2>Projects</h2>
+        <div class="project-container">
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/socialdestinations.png" loading="lazy" alt="Social Destinations Screenshot" />
+              <h3>Social Destinations</h3>
+              <p>Social travel platform with multimedia posts, custom maps, and real-time weather integration. Sample Profile: Username: parks | Password: 123 </p>
+              <a href="https://www.socialdestinations.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+                    <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/sunshine.png" loading="lazy" alt="Sunshine Screenshot" />
+              <h3>Real Estate Intelligence</h3>
+              <p>Real Estate intellingence app with market insight using rentcast API with AI chat.</p>
+              <a href="https://www.sunshineorange.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/park-harrisburg.png" loading="lazy" alt="Park Harrisburg Parking Guide Screenshot" />
+              <h3>Park Harrisburg</h3>
+              <p>Custom-built parking guide for Park Harrisburg with responsive UI and API-based data.</p>
+              <a href="https://www.parkharrisburg.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/atl-plus.png" loading="lazy" alt="ATL Plus Mobility Parking Guide Screenshot" />
+              <h3>ATL Plus Mobility</h3>
+              <p>Modernized parking portal featuring WordPress integration and scalable plugin architecture.</p>
+              <a href="https://www.atlplusmobility.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/ny-mets.png" loading="lazy" alt="NY Mets Parking Guide Screenshot" />
+              <h3>NY Mets Parking Guide</h3>
+              <p>Streamlined fan parking experience with custom theme development and event-based routing.</p>
+              <a href="https://www.nymetsparking.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/port-everglades.png" loading="lazy" alt="Port Everglades Screenshot" />
+              <h3>Port Everglades Parking Guide</h3>
+              <p>Parking guide built for Port Everglades.</p>
+              <a href="https://porteverglades.parkingguide.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/alamo.png" loading="lazy" alt="Alamo Parking Guide Screenshot" />
+              <h3>Alamo Parking Guide</h3>
+              <p>Scalable parking site for Alamo parking locations with mobile-first design.</p>
+              <a href="https://alamo.parkingguide.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/chicago-park.png" loading="lazy" alt="Chicago Park District Parking Guide Screenshot" />
+              <h3>Chicago Park District</h3>
+              <p>Interactive parking guide tailored for Chicago Park District visitors with mobile support and dynamic content.</p>
+              <a href="https://www.chicagoparkdistrictparking.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/metra-park.png" loading="lazy" alt="Metra Park Parking Guide Screenshot" />
+              <h3>Metra Parking</h3>
+              <p>Interactive parking guide tailored for Metra visitors with mobile support.</p>
+              <a href="https://www.metraparking.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/denver-ski.png" loading="lazy" alt="Denver Ski Shuttle Screenshot" />
+              <h3>Denver Ski Shuttle</h3>
+              <p>Interactive parking guide tailored for Denver Ski visitors with mobile support.</p>
+              <a href="https://www.denverskishuttle.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/baltimoreparking.png" loading="lazy" alt="
+                Baltimore Parking Screenshot" />
+              <h3>Baltimore Parking</h3>
+              <p>Interactive parking guide tailored for Baltimore visitors with mobile support.</p>
+              <a href="https://www.baltimoreparking.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/balpen.png" loading="lazy" alt="
+                Baltimore Peninsula Parking Screenshot" />
+              <h3>Baltimore Peninsula Parking</h3>
+              <p>Interactive parking guide tailored for Baltimore peninsula visitors with mobile support.</p>
+              <a href="https://www.balpenparking.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/xna-parking.png" loading="lazy" alt="
+                XNA Airport Parking Screenshot" />
+              <h3>XNA Airport Parking</h3>
+              <p>Interactive parking guide tailored for XNA Airport visitors with mobile support.</p>
+              <a href="https://www.flyxnaparking.com" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/carmelgazebo.png" loading="lazy" alt="
+                Carmel Gazebo Concerts" />
+              <h3>Carmel Gazebo Concerts</h3>
+              <p>Website for Carmel Gazebo Concerts.</p>
+              <a href="https://carmelgazeboconcerts.org/" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/simplychic.png" loading="lazy" alt="
+                Simply Chic" />
+              <h3>Simply Chic</h3>
+              <p>Website for Simply Chic.</p>
+              <a href="https://simplychicresale.com/" target="_blank" class="project-btn">
+              View Project
+              </a>
+            </div>
+          </div>
+          <div class="project-wrapper">
+            <div class="project-item">
+              <img src="/images/tealfurtrieve.jpg" loading="lazy" alt="Furtrieve" />
+              <h3>Furtrieve</h3>
+              <p>Website for Furtrieve.</p>
+              <button class="project-btn" id="openModal">View Project</button>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div id="videoModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe 
+                  src="https://player.vimeo.com/video/343883172?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
+                  frameborder="0" 
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;" 
+                  title="Screen_Capture">
+                </iframe>
+              </div>
+            </div>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
       </div>
       <div id="skills" class="tab-content">
         <h2>Skills</h2>
@@ -123,6 +284,7 @@
             <div class="skill"><i class="devicon-github-original colored"></i><span>GitHub</span></div>
             <div class="skill"><i class="devicon-azure-plain colored"></i><span>Azure</span></div>
             <div class="skill"><i class="devicon-jira-plain colored"></i><span>Jira</span></div>
+            <div class="skill"><i class="devicon-filezilla-plain"></i><span>FileZilla</span></div>
           </div>
           <!-- Analytics & SEO -->
           <h3>Analytics & SEO</h3>
@@ -193,169 +355,30 @@
           </ul>
         </div>
       </div>
-      <div id="portfolio" class="tab-content">
-        <h2>Projects</h2>
-        <div class="project-container">
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/socialdestinations.png" loading="lazy" alt="Social Destinations Screenshot" />
-              <h3>Social Destinations</h3>
-              <p>Social travel platform with multimedia posts, custom maps, and real-time weather integration. Sample Profile: Username: parks | Password: 123 </p>
-              <a href="https://www.socialdestinations.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/park-harrisburg.png" loading="lazy" alt="Park Harrisburg Parking Guide Screenshot" />
-              <h3>Park Harrisburg</h3>
-              <p>Custom-built parking guide for Park Harrisburg with responsive UI and API-based data.</p>
-              <a href="https://www.parkharrisburg.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/atl-plus.png" loading="lazy" alt="ATL Plus Mobility Parking Guide Screenshot" />
-              <h3>ATL Plus Mobility</h3>
-              <p>Modernized parking portal featuring WordPress integration and scalable plugin architecture.</p>
-              <a href="https://www.atlplusmobility.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/ny-mets.png" loading="lazy" alt="NY Mets Parking Guide Screenshot" />
-              <h3>NY Mets Parking Guide</h3>
-              <p>Streamlined fan parking experience with custom theme development and event-based routing.</p>
-              <a href="https://www.nymetsparking.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/alamo.png" loading="lazy" alt="Alamo Parking Guide Screenshot" />
-              <h3>Alamo Parking Guide</h3>
-              <p>Scalable parking site for Alamo parking locations with mobile-first design.</p>
-              <a href="https://alamo.parkingguide.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/chicago-park.png" loading="lazy" alt="Chicago Park District Parking Guide Screenshot" />
-              <h3>Chicago Park District</h3>
-              <p>Interactive parking guide tailored for Chicago Park District visitors with mobile support and dynamic content.</p>
-              <a href="https://www.chicagoparkdistrictparking.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/metra-park.png" loading="lazy" alt="Metra Park Parking Guide Screenshot" />
-              <h3>Metra Parking</h3>
-              <p>Interactive parking guide tailored for Metra visitors with mobile support.</p>
-              <a href="https://www.metraparking.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/denver-ski.png" loading="lazy" alt="Denver Ski Shuttle Screenshot" />
-              <h3>Denver Ski Shuttle</h3>
-              <p>Interactive parking guide tailored for Denver Ski visitors with mobile support.</p>
-              <a href="https://www.denverskishuttle.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/baltimoreparking.png" loading="lazy" alt="
-                Baltimore Parking Screenshot" />
-              <h3>Baltimore Parking</h3>
-              <p>Interactive parking guide tailored for Baltimore visitors with mobile support.</p>
-              <a href="https://www.baltimoreparking.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/balpen.png" loading="lazy" alt="
-                Baltimore Peninsula Parking Screenshot" />
-              <h3>Baltimore Peninsula Parking</h3>
-              <p>Interactive parking guide tailored for Baltimore peninsula visitors with mobile support.</p>
-              <a href="https://www.balpenparking.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-                    <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/xna-parking.png" loading="lazy" alt="
-                XNA Airport Parking Screenshot" />
-              <h3>XNA Airport Parking</h3>
-              <p>Interactive parking guide tailored for XNA Airport visitors with mobile support.</p>
-              <a href="https://www.flyxnaparking.com" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/carmelgazebo.png" loading="lazy" alt="
-                Carmel Gazebo Concerts" />
-              <h3>Carmel Gazebo Concerts</h3>
-              <p>Website for Carmel Gazebo Concerts.</p>
-              <a href="https://carmelgazeboconcerts.org/" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/simplychic.png" loading="lazy" alt="
-                Simply Chic" />
-              <h3>Simply Chic</h3>
-              <p>Website for Simply Chic.</p>
-              <a href="https://simplychicresale.com/" target="_blank" class="project-btn">
-              View Project
-              </a>
-            </div>
-          </div>
-          <div class="project-wrapper">
-            <div class="project-item">
-              <img src="/images/tealfurtrieve.jpg" loading="lazy" alt="Furtrieve" />
-              <h3>Furtrieve</h3>
-              <p>Website for Furtrieve.</p>
-              <button class="project-btn" id="openModal">View Project</button>
-            </div>
-          </div>
-          <!-- Modal -->
-          <div id="videoModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <div style="padding:56.25% 0 0 0;position:relative;">
-                <iframe 
-                  src="https://player.vimeo.com/video/343883172?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
-                  frameborder="0" 
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" 
-                  style="position:absolute;top:0;left:0;width:100%;height:100%;" 
-                  title="Screen_Capture">
-                </iframe>
-              </div>
-            </div>
-          </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
-        </div>
+      <div id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p class="about-me">
+          Hi, I'm Parker! Welcome to my portfolio! I am a results-driven Full-Stack Web Developer specializing in high-performance websites and scalable digital solutions. With expertise in HTML, CSS, PHP, MySQL, JavaScript, and AWS, I craft intuitive, user-focused platforms that enhance functionality, optimize SEO, and drive engagement.
+          <br><br>
+          Explore my work and see how I bring ideas to life at parkermc.com. I also built a social travel web application at <a href="https://socialdestinations.com" target="_blank">socialdestinations.com</a>. Let’s connect and build something exceptional!
+        </p>
+      </div>
+      <div id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <p class="about-me">
+          Have a project in mind, or just want to say hi? I’d love to hear from you! Fill out the form below or reach out directly through LinkedIn or email.
+        </p>
+        <form class="contact-form" id="contactForm" method="POST">
+          <input type="text" name="website" id="website" style="display:none;">
+          <label for="name">Name</label>
+          <input type="text" name="name" placeholder="Name" id="name" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" id="email" required>
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Message" rows="3" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
       </div>
     </div>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
